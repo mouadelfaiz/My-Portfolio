@@ -1,15 +1,14 @@
-/* GENEREL */
+/* GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -22,13 +21,15 @@ p {
 
 /* TRANSITION */
 
-a, btn {
+a,
+.btn {
   transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
 
-nav, .nav-links {
+nav,
+.nav-links {
   display: flex;
 }
 
@@ -54,7 +55,7 @@ a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181) ;
+  text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
@@ -89,7 +90,7 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links {
@@ -98,9 +99,9 @@ a:hover {
   right: 0;
   background-color: white;
   width: fit-content;
-  max-height:0;
+  max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links a {
@@ -110,7 +111,7 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links li {
@@ -124,27 +125,28 @@ a:hover {
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }
+
 .hamburger-icon.open span:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
 .hamburger-icon span:first-child {
   transform: none;
-  }
-
-.hamburger-icon span:first-child {
-opacity: 1;
 }
 
 .hamburger-icon span:first-child {
-transform: none;
+  opacity: 1;
 }
 
+.hamburger-icon span:first-child {
+  transform: none;
+}
 
-/* SECTION */
+/* SECTIONS */
 
 section {
   padding-top: 4vh;
@@ -207,8 +209,8 @@ section {
 /* ICONS */
 
 .icon {
-  height: 2rem;
   cursor: pointer;
+  height: 2rem;
 }
 
 /* BUTTONS */
@@ -227,15 +229,18 @@ section {
   border-radius: 2rem;
 }
 
-.btn-color-1, .btn-color-2 {
+.btn-color-1,
+.btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.btn-color-1:hover, .btn-color-2:hover {
+.btn-color-1:hover,
+.btn-color-2:hover {
   cursor: pointer;
 }
 
-.btn-color-1, .btn-color-2:hover {
+.btn-color-1,
+.btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
@@ -249,10 +254,64 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255);
+  border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-container {
   gap: 1rem;
 }
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
 
