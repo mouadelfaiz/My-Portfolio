@@ -422,3 +422,25 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
+
+/* FOOTER SECTION  */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+
+footer p {
+  text-align: center;
+}
+
+
+#social-container {
+  margin: 1rem;
+}
+
+.about-pic {
+  width: 28rem;
+  height: 30rem;
+}
